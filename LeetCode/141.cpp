@@ -16,7 +16,7 @@ public:
 		while(fast && fast->next){
 			slow = slow->next;
 			fast = fast->next->next;
-			//!fast && slow==fast->next希望能更快速收敛
+			//fast && slow==fast->next希望能更快速收敛
 			if(slow==fast || fast && slow==fast->next)
 				return true;
 		}
