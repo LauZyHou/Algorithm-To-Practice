@@ -10,3 +10,4 @@
 !*.java
 !*.sql
 !.gitignore
+!*.sh
