@@ -2,19 +2,23 @@ class Solution {
 public:
 	set<int>* p_st_ar = nullptr;
 	bool* fv_ar = nullptr;
-	vector<int> ans;
+	int* ans;
+
+	Solution() {
+		ans = new int[10010];
+	}
 
 	//上色
 	void go(int k) {
 		if(fv_ar[k])
 			return ;
-		cout<<k<<"->";
+		//cout<<k<<"->";
 		bool color_ok[4] = {true,true,true,true};
 		set<int>::iterator it = p_st_ar[k].begin();
 		while(it!=p_st_ar[k].end()) {
 			if(true==fv_ar[*it])
-				color_ok[ans[int(*it)]-1] = false;
-			cout<<*it<<" ";
+				color_ok[ans[*it]-1] = false;
+			//cout<<*it<<" ";
 			it++;
 		}
 		for(int i=0;i<4;i++)
@@ -23,7 +27,7 @@ public:
 				break;
 		}
 		fv_ar[k] = true;
-		cout<<endl;
+		//cout<<endl;
 	}
 	
 	vector<int> gardenNoAdj(int n, vector<vector<int>>& p_v) {
@@ -46,6 +50,6 @@ public:
 		//relese heap
 		delete[] p_st_ar;
 		delete[] fv_ar;
-		return ans;
+		return vector<int>(ans,ans+n);
     }
 };
