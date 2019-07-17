@@ -16,7 +16,7 @@ public:
 			return nullptr;
 		TreeNode* ret = new TreeNode(a[begin]);
 		int i = begin+1;
-		for(;a[i]<a[begin];i++)
+		for(;i<=end && a[i]<a[begin];i++)
 			;
 		ret->left = go(begin+1,i-1);
 		ret->right = go(i,end);
