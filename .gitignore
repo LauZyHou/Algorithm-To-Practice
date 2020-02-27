@@ -11,3 +11,4 @@
 !*.sql
 !.gitignore
 !*.sh
+!.vscode/*
