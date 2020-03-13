@@ -1,5 +1,8 @@
 {
     "files.exclude": {
         "**/*.exe": true
+    },
+    "files.associations": {
+        "vector": "cpp"
     }
 }
