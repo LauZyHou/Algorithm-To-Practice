@@ -3,6 +3,11 @@
         "**/*.exe": true
     },
     "files.associations": {
-        "vector": "cpp"
+        "vector": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string_view": "cpp"
     }
 }
