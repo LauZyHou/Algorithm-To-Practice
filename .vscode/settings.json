@@ -74,5 +74,6 @@
         "thread": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "python.pythonPath": "D:\\MyProgram\\Anaconda3\\envs\\pytorch\\python.exe"
 }
